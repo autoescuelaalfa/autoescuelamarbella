@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Autoescuela en Marbella | Permiso B Manual y Automático</title>
+
+<meta name="description" content="Autoescuela en Marbella especializada en Permiso B manual y automático. Clases prácticas, horarios flexibles y alta tasa de aprobados. Llámanos al 693 57 30 74.">
+
+<link rel="canonical" href="https://autoescuelamarbella.es/">
+
+<meta property="og:title" content="Autoescuela Marbella | Permiso B Manual y Automático">
+<meta property="og:description" content="Saca tu carnet de conducir en Marbella con clases personalizadas. Permiso B manual y automático.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://autoescuelamarbella.es/">
+<meta name="robots" content="index,follow">
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "DrivingSchool",
+ "name": "Autoescuela Marbella",
+ "areaServed": "Marbella",
+ "telephone": "+34693573074",
+ "url": "https://autoescuelamarbella.es",
+ "serviceType": [
+   "Permiso B Manual",
+   "Permiso B Automático"
+ ]
+}
+</script>
+
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#2563eb",
+                    "primary-dark": "#1d4ed8",
+                    secondary: "#0f172a",
+                    accent: "#06b6d4",
+                    "accent-warm": "#f59e0b",
+                    "background-light": "#f8fafc",
+                    "background-dark": "#0f172a",
+                    "surface-light": "#ffffff",
+                    "surface-dark": "#1e293b",
+                },
+                fontFamily: {
+                    display: ["Inter", "sans-serif"],
+                    body: ["Inter", "sans-serif"],
+                },
+                borderRadius: {
+                    DEFAULT: "0.5rem",
+                    lg: "1rem",
+                    xl: "1.5rem",
+                    "2xl": "2rem",
+                    full: "9999px",
+                },
+            },
+        },
+    }
+</script>
+<style>
+    /* Animated gradient background */
+    @keyframes gradient-shift {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+    }
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+    }
+    @keyframes float-slow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-8px) rotate(3deg); }
+    }
+    @keyframes pulse-ring {
+        0% { transform: scale(1); opacity: 0.6; }
+        100% { transform: scale(1.4); opacity: 0; }
+    }
+    @keyframes slide-up {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+    }
+    .animate-gradient { animation: gradient-shift 8s ease infinite; background-size: 200% 200%; }
+    .animate-float { animation: float 6s ease-in-out infinite; }
+    .animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
+    .animate-slide-up { animation: slide-up 0.8s ease-out both; }
+    .animate-fade-in { animation: fade-in 1s ease-out both; }
+    .animate-shimmer { background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent); background-size: 200% 100%; animation: shimmer 3s infinite; }
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-500 { animation-delay: 0.5s; }
+    .delay-600 { animation-delay: 0.6s; }
+    /* Glassmorphism */
+    .glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border: 1px solid rgba(255,255,255,0.3); }
+    .glass-dark { background: rgba(30,41,59,0.8); backdrop-filter: blur(20px) saturate(180%); }
+    /* Decorative blob */
+    .blob { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    /* Filled star icons */
+    .star-filled { font-variation-settings: 'FILL' 1; }
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+    /* Card hover shine effect */
+    .card-shine { position: relative; overflow: hidden; }
+    .card-shine::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(to bottom right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 40%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.05) 60%, rgba(255,255,255,0) 100%); transform: rotate(30deg); transition: 0.8s; opacity: 0; }
+    .card-shine:hover::before { opacity: 1; left: 100%; }
+    /* WhatsApp floating button */
+    .whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 100; }
+    .whatsapp-float .ring { position: absolute; inset: -4px; border-radius: 9999px; border: 2px solid #25D366; animation: pulse-ring 2s infinite; }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full glass dark:glass-dark border-b border-white/20 dark:border-slate-700/50">
+<div class="px-6 md:px-12 lg:px-40 py-3 flex items-center justify-between">
+<div class="flex items-center gap-3 text-secondary dark:text-white">
+
+<h2 class="text-lg font-bold tracking-tight">Autoescuela Marbella</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="#servicios">Servicios</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="#beneficios">Beneficios</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="#opiniones">Opiniones</a>
+</nav>
+<a href="https://wa.me/34693573074?text=Hola,%20quiero%20información%20sobre%20las%20clases%20para%20sacar%20el%20permiso%20B%20en%20Marbella" class="hidden md:flex cursor-pointer items-center justify-center gap-2 rounded-full h-10 px-6 bg-gradient-to-r from-primary to-primary-dark hover:shadow-lg hover:shadow-primary/30 text-white text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5">
+<span class="material-symbols-outlined text-sm">call</span>
+<span>Contactar</span>
+</a>
+<button id="mobile-menu-btn" class="md:hidden text-slate-700 dark:text-slate-200 p-2 -mr-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Mobile Menu Container -->
+<div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white dark:bg-surface-dark border-b border-slate-100 dark:border-slate-800 shadow-xl z-40">
+<nav class="flex flex-col py-6 px-6 gap-6">
+<a class="text-base font-medium text-slate-700 dark:text-slate-200 hover:text-primary transition-colors mobile-link" href="#servicios">Servicios</a>
+<a class="text-base font-medium text-slate-700 dark:text-slate-200 hover:text-primary transition-colors mobile-link" href="#beneficios">Beneficios</a>
+<a class="text-base font-medium text-slate-700 dark:text-slate-200 hover:text-primary transition-colors mobile-link" href="#opiniones">Opiniones</a>
+<a href="https://wa.me/34693573074?text=Hola,%20quiero%20información%20sobre%20las%20clases%20para%20sacar%20el%20permiso%20B%20en%20Marbella" class="mt-2 flex items-center justify-center gap-2 rounded-full h-12 w-full bg-gradient-to-r from-primary to-primary-dark shadow-lg shadow-primary/30 text-white font-semibold transition-all duration-300 mobile-link">
+<span class="material-symbols-outlined text-sm">call</span>
+<span>Contactar</span>
+</a>
+</nav>
+</div>
+</header>
+
+<!-- Hero Section -->
+<div class="w-full px-6 md:px-12 lg:px-40 pt-3 pb-16 lg:pt-8 lg:pb-20 relative overflow-hidden">
+<!-- Decorative background elements -->
+<div class="absolute top-20 -left-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float-slow"></div>
+<div class="absolute bottom-10 right-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-float" style="animation-delay:2s;"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-primary/3 to-accent/3 rounded-full blur-3xl"></div>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center relative z-10">
+<!-- Hero Content -->
+<div class="flex flex-col gap-6 lg:w-1/2 text-left">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider w-fit animate-slide-up">
+<span class="material-symbols-outlined text-sm star-filled">verified</span>
+Clases de conducir en Marbella
+</div>
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight text-slate-900 dark:text-white animate-slide-up delay-100">
+Autoescuela en <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Marbella</span> para obtener el Permiso B
+</h1>
+<p class="text-lg text-slate-600 max-w-2xl">
+Clases de conducción en Marbella para obtener tu permiso B con coche manual o automático. Horarios flexibles y clases adaptadas a cada alumno.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 mt-2 animate-slide-up delay-300">
+<a href="tel:+34693573074" class="flex items-center justify-center gap-2 rounded-full h-14 px-8 bg-gradient-to-r from-primary to-primary-dark hover:shadow-xl hover:shadow-primary/30 text-white text-base font-bold transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto">
+<span class="material-symbols-outlined">call</span>
+<span>Llamar Ahora</span>
+</a>
+<a href="https://wa.me/34693573074?text=Hola,%20quiero%20información%20sobre%20las%20clases%20para%20sacar%20el%20permiso%20B%20en%20Marbella" target="_blank" class="flex items-center justify-center gap-2 rounded-full h-14 px-8 bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 hover:border-green-400 hover:bg-green-50 text-slate-900 dark:text-white hover:text-green-600 text-base font-bold transition-all duration-300 w-full sm:w-auto group">
+<svg class="w-5 h-5 text-green-500 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.673-6.303-1.834l-.44-.267-2.848.955.955-2.848-.267-.44A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+<span>WhatsApp</span>
+</a>
+</div>
+<!-- Social proof -->
+<div class="flex items-center gap-4 mt-4 animate-slide-up delay-400">
+<div class="flex -space-x-3">
+  <div class="size-9 rounded-full border-[3px] border-white dark:border-slate-900 bg-slate-200 shadow-sm" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop'); background-size: cover;"></div>
+  <div class="size-9 rounded-full border-[3px] border-white dark:border-slate-900 bg-slate-300 shadow-sm" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop'); background-size: cover;"></div>
+  <div class="size-9 rounded-full border-[3px] border-white dark:border-slate-900 bg-slate-400 shadow-sm" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop'); background-size: cover;"></div>
+</div>
+<div class="flex flex-col">
+<div class="flex gap-0.5 text-amber-400">
+<span class="material-symbols-outlined text-sm star-filled">star</span><span class="material-symbols-outlined text-sm star-filled">star</span><span class="material-symbols-outlined text-sm star-filled">star</span><span class="material-symbols-outlined text-sm star-filled">star</span><span class="material-symbols-outlined text-sm star-filled">star</span>
+</div>
+<p class="text-sm text-slate-500">Opiniones de los alumnos</p>
+</div>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="lg:w-1/2 w-full relative animate-fade-in delay-300">
+<div class="absolute -inset-8 bg-gradient-to-tr from-primary/10 via-accent/5 to-transparent rounded-[3rem] -z-10 blur-2xl animate-float-slow"></div>
+<!-- Floating stat badge -->
+<div class="absolute -left-4 top-8 z-20 glass rounded-2xl px-4 py-3 shadow-lg animate-float hidden md:flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-lg">trending_up</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 font-medium">Alta tasa de aprobados</p>
+<p class="text-lg font-bold text-slate-900">Resultados excelentes</p>
+</div>
+</div>
+<div class="w-full aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-300/50 dark:shadow-black/50 relative group ring-1 ring-black/5">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent group-hover:from-transparent transition-all duration-500 z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Luxury modern car driving on a coastal road in Marbella" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB58X-4BtfyCPUfxCmCeZVdA7K7tauPRaVPX_9xP-G_Xa57GoE_U6V0HgqM4F3T7gKfulzYwFLNtwhZnbu8y_uNopS-tPhE_MiQTZXFGv-zg1T88e2EjxvBG3RkQAbnOcJntV3iP7GbZ9sP_RPvnVpKHIN-KCLvOYyzjlBD6ZjWETHyi2BxW83JMKZ9zwPLYn-szBkSJ7ikzvsqjpghRcbhBYwee0IAbEEDamHHbUGbOcTN6SZBEwQoYixHW8UcMcGBTJTBtjX8y1Tr');"></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Stats Bar -->
+<div class="w-full px-6 md:px-12 lg:px-40 -mt-8 relative z-20">
+<div class="max-w-5xl mx-auto glass dark:glass-dark rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-black/20 p-6 md:p-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+<div class="text-center">
+<p class="text-3xl md:text-4xl font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">500+</p>
+<p class="text-xs md:text-sm text-slate-500 mt-1 font-medium">Alumnos Aprobados</p>
+</div>
+<div class="text-center">
+<p class="text-3xl md:text-4xl font-black"><span class="text-primary">Alta</span></p>
+<p class="text-xs md:text-sm text-slate-500 mt-1 font-medium">Tasa de Aprobados</p>
+</div>
+<div class="text-center">
+<p class="text-3xl md:text-4xl font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">15+</p>
+<p class="text-xs md:text-sm text-slate-500 mt-1 font-medium">Años de Experiencia</p>
+</div>
+<div class="text-center">
+<p class="text-3xl md:text-4xl font-black"><span class="text-primary">5</span> ⭐</p>
+<p class="text-xs md:text-sm text-slate-500 mt-1 font-medium">Opiniones de los alumnos</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Cómo empezar -->
+<section class="max-w-6xl mx-auto py-20 px-6">
+
+<div class="text-center mb-14">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">
+Cómo empezar tus clases de conducir
+</h2>
+
+<p class="text-slate-600 max-w-2xl mx-auto">
+Comenzar las clases para obtener tu permiso B en Marbella es un proceso sencillo y rápido.
+</p>
+</div>
+
+<div class="grid md:grid-cols-4 gap-8">
+
+<div class="text-center">
+<div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold text-lg">1</div>
+<h3 class="font-semibold mb-2">Contacta</h3>
+<p class="text-sm text-slate-600">
+Escríbenos por WhatsApp o llámanos para recibir información.
+</p>
+</div>
+
+<div class="text-center">
+<div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold text-lg">2</div>
+<h3 class="font-semibold mb-2">Aprueba el teórico con nosotros</h3>
+<p class="text-sm text-slate-600">
+Si aún no tienes el teórico podrás prepararlo con nuestra plataforma online. Si ya lo tienes aprobado por libre o vienes de otra autoescuela puedes pasar directamente al paso 3.
+</p>
+</div>
+
+<div class="text-center">
+<div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold text-lg">3</div>
+<h3 class="font-semibold mb-2">Empiezas a conducir</h3>
+<p class="text-sm text-slate-600">
+Comienzas las prácticas con coche manual o automático.
+</p>
+</div>
+
+<div class="text-center">
+<div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold text-lg">4</div>
+<h3 class="font-semibold mb-2">Te preparamos para aprobar</h3>
+<p class="text-sm text-slate-600">
+Nuestro objetivo es ayudarte a aprobar el examen práctico con seguridad.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Services Section -->
+<div class="w-full px-6 md:px-12 lg:px-40 py-24 bg-gradient-to-b from-slate-50 to-white dark:from-background-dark dark:to-surface-dark relative" id="servicios">
+<div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+<div class="max-w-7xl mx-auto flex flex-col gap-12">
+<div class="flex flex-col gap-3 items-center text-center">
+<span class="text-primary font-bold tracking-wider uppercase text-sm">Nuestros Cursos</span>
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Permiso B en Marbella: manual y automático</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Service Card Manual -->
+<div class="flex flex-col overflow-hidden rounded-[2rem] bg-white dark:bg-surface-dark shadow-xl shadow-slate-200/60 dark:shadow-black/20 group hover:-translate-y-2 transition-all duration-500 ring-1 ring-black/5 dark:ring-white/5">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent group-hover:from-black/10 transition-all duration-500 z-10"></div>
+<div class="absolute top-4 left-4 z-20 glass rounded-full px-3 py-1 text-xs font-bold text-slate-700">Manual</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Manual gear shift" style="background-image: url('Manual.jpg');"></div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Permiso B Manual</h3>
+<div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400 text-lg">auto_transmission</span>
+</div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 mb-6 flex-grow">Domina la conducción tradicional. Ideal para quienes buscan un control total del vehículo y la máxima versatilidad.</p>
+<ul class="space-y-3 mb-8 text-sm text-slate-600 dark:text-slate-300">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg star-filled">check_circle</span> Aprendizaje sencillo con nuestros métodos</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg star-filled">check_circle</span> Vehículos muy manejables</li>
+</ul>
+<a href="https://wa.me/34693573074?text=Hola,%20quiero%20información%20sobre%20las%20clases%20para%20sacar%20el%20permiso%20B%20en%20Marbella" class="w-full py-4 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-gradient-to-r hover:from-primary hover:to-primary-dark hover:text-white text-slate-900 dark:text-white font-bold transition-all duration-300 text-center block">
+Solicitar Información
+</a>
+</div>
+</div>
+<!-- Service Card Automatic -->
+<div class="flex flex-col overflow-hidden rounded-[2rem] bg-white dark:bg-surface-dark shadow-xl shadow-slate-200/60 dark:shadow-black/20 group hover:-translate-y-2 transition-all duration-500 ring-1 ring-black/5 dark:ring-white/5">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent group-hover:from-black/10 transition-all duration-500 z-10"></div>
+<div class="absolute top-4 left-4 z-20 glass rounded-full px-3 py-1 text-xs font-bold text-slate-700">Automático</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Automatic car interior" style="background-image: url('Automatic.jpg');"></div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Permiso B Automático</h3>
+<div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400 text-lg">settings</span>
+</div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 mb-6 flex-grow">Disfruta de la comodidad y facilidad. Concéntrate en la circulación y olvídate del embrague con nuestros coches automáticos.</p>
+<ul class="space-y-3 mb-8 text-sm text-slate-600 dark:text-slate-300">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg star-filled">check_circle</span> Rápido aprendizaje</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg star-filled">check_circle</span> Vehículo con gran comodidad</li>
+</ul>
+<a href="https://wa.me/34693573074?text=Hola,%20quiero%20información%20sobre%20las%20clases%20para%20sacar%20el%20permiso%20B%20en%20Marbella" class="w-full py-4 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-gradient-to-r hover:from-primary hover:to-primary-dark hover:text-white text-slate-900 dark:text-white font-bold transition-all duration-300 text-center block">
+Solicitar Información
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Fleet Gallery -->
+<div class="w-full px-6 md:px-12 lg:px-40 py-24 bg-white dark:bg-surface-dark">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<div class="flex flex-col gap-2">
+<span class="text-primary font-bold tracking-wider uppercase text-sm">Flota Premium</span>
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white">Nuestra Flota</h2>
+<p class="text-slate-500 dark:text-slate-400">Tecnología y seguridad en cada lección.</p>
+</div>
+
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 h-96 md:h-64">
+<div class="col-span-1 relative rounded-2xl overflow-hidden group ring-1 ring-black/5">
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" role="img" aria-label="Coche de prácticas Vehículo 1 de Autoescuela Marbella" style="background-image: url('Vehículo 1.webp');"></div>
+</div>
+<div class="col-span-1 relative rounded-2xl overflow-hidden group ring-1 ring-black/5">
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+<div class="w-full h-full bg-cover transition-transform duration-700 group-hover:scale-105" role="img" aria-label="Coche de prácticas Vehículo 2 de Autoescuela Marbella" style="background-image: url('Vehículo 2.webp'); background-position: center 30%;"></div>
+</div>
+<div class="col-span-1 relative rounded-2xl overflow-hidden group ring-1 ring-black/5">
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+<div class="w-full h-full bg-cover transition-transform duration-700 group-hover:scale-105" role="img" aria-label="Coche de prácticas Vehículo 3 de Autoescuela Marbella" style="background-image: url('Vehículo 3.webp'); background-position: center 35%;"></div>
+</div>
+<div class="col-span-1 relative rounded-2xl overflow-hidden group ring-1 ring-black/5">
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" role="img" aria-label="Coche de prácticas Vehículo 4 de Autoescuela Marbella" style="background-image: url('Vehículo 4.webp');"></div>
+</div>
+</div>
+</div>
+</div>
+
+<section class="max-w-6xl mx-auto py-20 px-6">
+
+<div class="text-center mb-12">
+
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+Zonas de recogida para clases de conducir en Marbella
+</h2>
+
+<p class="text-slate-600 max-w-3xl mx-auto">
+Ofrecemos clases prácticas de conducción con recogida en distintos puntos de Marbella para mayor comodidad. 
+Las prácticas del permiso B pueden comenzar en diferentes zonas de la ciudad según disponibilidad y acuerdo con el alumno.
+</p>
+
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Bello Horizonte.webp" alt="Recogida coche de autoescuela en Bello Horizonte Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Bello Horizonte</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Bello Horizonte.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Marbella Centro.webp" alt="Recogida coche de autoescuela en Marbella Centro" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Marbella Centro</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Marbella.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Guadalpín.webp" alt="Recogida coche de autoescuela en Guadalpín Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Guadalpín</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Guadalpín.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Puente Romano.webp" alt="Recogida coche de autoescuela en Puente Romano Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Puente Romano</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Puente Romano.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Rio Verde.webp" alt="Recogida coche de autoescuela en Río Verde Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Río Verde</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Río Verde.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Puerto Banús.webp" alt="Recogida coche de autoescuela en Puerto Banús Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Puerto Banús</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Puerto Banús.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Aloha.webp" alt="Recogida coche de autoescuela en Aloha Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Aloha</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Aloha.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Nueva Andalucía.png" alt="Recogida coche de autoescuela en Nueva Andalucía Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Nueva Andalucía</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Nueva Andalucía.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida San Pedro.webp" alt="Recogida coche de autoescuela en San Pedro Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">San Pedro</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en San Pedro.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Elviria.webp" alt="Recogida coche de autoescuela en Elviria Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Elviria</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Elviria.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Calahonda.webp" alt="Recogida coche de autoescuela en Calahonda Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Calahonda</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Calahonda.
+</p>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+<div class="h-60 w-full bg-slate-50/50 flex items-center justify-center p-4 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-50/20"></div>
+<img src="Recogida Riviera.webp" alt="Recogida coche de autoescuela en Riviera Marbella" loading="lazy" class="max-h-full max-w-full rounded-xl shadow object-contain relative z-10 group-hover:scale-105 transition-transform duration-500">
+</div>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">Riviera</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+Clases prácticas de conducción con recogida en Riviera.
+</p>
+</div>
+</div>
+
+</div>
+
+<div class="mt-12 text-center">
+
+<p class="text-slate-600 max-w-3xl mx-auto">
+Si estás buscando una autoescuela en Marbella para obtener tu permiso B, podemos organizar las clases prácticas en distintos puntos de la ciudad para adaptarnos a tu ubicación y horarios.
+</p>
+
+</div>
+
+</section>
+
+<!-- Benefits Section -->
+<div class="w-full bg-white dark:bg-surface-dark px-6 md:px-12 lg:px-40 py-24" id="beneficios">
+<div class="max-w-7xl mx-auto flex flex-col gap-14">
+<div class="flex flex-col gap-4 text-center max-w-2xl mx-auto">
+<span class="text-primary font-bold tracking-wider uppercase text-sm">¿Por qué nosotros?</span>
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
+Por qué elegir Autoescuela Marbella
+</h2>
+<p class="text-slate-500 dark:text-slate-400 text-lg">
+Experiencia de conducción superior diseñada para adaptarse a tu estilo de vida.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-8 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50/50 dark:from-slate-800/50 dark:to-slate-800/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 border border-slate-100 dark:border-slate-700/50 group hover:-translate-y-1 card-shine">
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center text-white mb-6 shadow-lg shadow-primary/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Horarios Flexibles</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed text-sm">Adapta tus clases prácticas a tu ritmo de vida, incluyendo fines de semana.</p>
+</div>
+<div class="p-8 rounded-2xl bg-gradient-to-br from-slate-50 to-cyan-50/50 dark:from-slate-800/50 dark:to-slate-800/30 hover:shadow-xl hover:shadow-accent/5 transition-all duration-500 border border-slate-100 dark:border-slate-700/50 group hover:-translate-y-1 card-shine">
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-cyan-400 flex items-center justify-center text-white mb-6 shadow-lg shadow-accent/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Instructores Expertos</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed text-sm">Aprende de los mejores profesionales con años de experiencia en formación vial.</p>
+</div>
+<div class="p-8 rounded-2xl bg-gradient-to-br from-slate-50 to-violet-50/50 dark:from-slate-800/50 dark:to-slate-800/30 hover:shadow-xl hover:shadow-violet-500/5 transition-all duration-500 border border-slate-100 dark:border-slate-700/50 group hover:-translate-y-1 card-shine">
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-500 flex items-center justify-center text-white mb-6 shadow-lg shadow-violet-500/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Flota Moderna</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed text-sm">Vehículos nuevos (Seat, volkswagen) equipados con la última tecnología.</p>
+</div>
+<div class="p-8 rounded-2xl bg-gradient-to-br from-slate-50 to-amber-50/50 dark:from-slate-800/50 dark:to-slate-800/30 hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-500 border border-slate-100 dark:border-slate-700/50 group hover:-translate-y-1 card-shine">
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white mb-6 shadow-lg shadow-amber-500/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Alto índice de aprobados</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed text-sm">Nuestra metodología personalizada garantiza resultados excepcionales en el primer intento.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Testimonials -->
+<div class="w-full px-6 md:px-12 lg:px-40 py-24 bg-gradient-to-b from-slate-50 to-white dark:from-background-dark dark:to-surface-dark relative" id="opiniones">
+
+<div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+
+<div class="max-w-7xl mx-auto flex flex-col items-center">
+
+<span class="text-primary font-bold tracking-wider uppercase text-sm mb-3">
+Testimonios
+</span>
+
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 text-center">
+Lo que dicen nuestros alumnos
+</h2>
+
+<p class="text-slate-500 dark:text-slate-400 text-center max-w-xl mb-12">
+Opiniones reales de alumnos que han obtenido su permiso de conducir con nosotros en Marbella.
+</p>
+
+
+<div class="flex gap-6 w-full overflow-x-auto pb-8 snap-x snap-mandatory scroll-smooth">
+
+<!-- Review -->
+<div class="min-w-[320px] md:min-w-[360px] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 dark:border-slate-800 snap-center transition-all duration-300 relative">
+
+<div class="flex gap-0.5 text-amber-400 mb-4">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+
+<p class="text-slate-600 dark:text-slate-300 italic mb-6 leading-relaxed">
+"Estuve casi un año intentando sacarme el teórico por mi cuenta y nada, fue hacer el intensivo con Jesús y me lo saqué a la primera. Explica todo perfecto."
+</p>
+
+<div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-11 rounded-full bg-primary/10 ring-2 ring-primary/20 flex items-center justify-center">
+<span class="text-primary font-bold text-sm">C</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Cristina Sánchez</h4>
+<span class="text-xs text-slate-400">Reseña de Google</span>
+</div>
+</div>
+</div>
+
+
+<div class="min-w-[320px] md:min-w-[360px] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 dark:border-slate-800 snap-center transition-all duration-300">
+
+<div class="flex gap-0.5 text-amber-400 mb-4">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+
+<p class="text-slate-600 dark:text-slate-300 italic mb-6 leading-relaxed">
+"Tuve una experiencia excelente en Autoescuela Alfa, especialmente gracias a mi instructor Jesús. Muy profesional y paciente."
+</p>
+
+<div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-11 rounded-full bg-primary/10 ring-2 ring-primary/20 flex items-center justify-center">
+<span class="text-primary font-bold text-sm">O</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Ori Chervinka</h4>
+<span class="text-xs text-slate-400">Reseña de Google</span>
+</div>
+</div>
+</div>
+
+
+<div class="min-w-[320px] md:min-w-[360px] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 dark:border-slate-800 snap-center transition-all duration-300">
+
+<div class="flex gap-0.5 text-amber-400 mb-4">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+
+<p class="text-slate-600 dark:text-slate-300 italic mb-6 leading-relaxed">
+"Autoescuela excelente para sacarse el carnet rápidamente y sin complicaciones. Jesús transmite mucha seguridad."
+</p>
+
+<div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-11 rounded-full bg-primary/10 ring-2 ring-primary/20 flex items-center justify-center">
+<span class="text-primary font-bold text-sm">E</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Enrique Ferrer</h4>
+<span class="text-xs text-slate-400">Reseña de Google</span>
+</div>
+</div>
+</div>
+
+
+<div class="min-w-[320px] md:min-w-[360px] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 dark:border-slate-800 snap-center transition-all duration-300">
+
+<div class="flex gap-0.5 text-amber-400 mb-4">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+
+<p class="text-slate-600 dark:text-slate-300 italic mb-6 leading-relaxed">
+"La mejor autoescuela sin duda. Jesús hace que las clases sean divertidas y productivas. Gracias a él lo aprobé todo a la primera."
+</p>
+
+<div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-11 rounded-full bg-primary/10 ring-2 ring-primary/20 flex items-center justify-center">
+<span class="text-primary font-bold text-sm">A</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Ainara Conde</h4>
+<span class="text-xs text-slate-400">Reseña de Google</span>
+</div>
+</div>
+</div>
+
+
+<div class="min-w-[320px] md:min-w-[360px] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 dark:border-slate-800 snap-center transition-all duration-300">
+
+<div class="flex gap-0.5 text-amber-400 mb-4">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+
+<p class="text-slate-600 dark:text-slate-300 italic mb-6 leading-relaxed">
+"Agradecida de haber encontrado esta autoescuela. Siempre quise sacarme el carnet y aquí por fin lo conseguí."
+</p>
+
+<div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-11 rounded-full bg-primary/10 ring-2 ring-primary/20 flex items-center justify-center">
+<span class="text-primary font-bold text-sm">M</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Maria Serrano</h4>
+<span class="text-xs text-slate-400">Reseña de Google</span>
+</div>
+</div>
+</div>
+
+
+<div class="min-w-[320px] md:min-w-[360px] bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 dark:border-slate-800 snap-center transition-all duration-300">
+
+<div class="flex gap-0.5 text-amber-400 mb-4">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+
+<p class="text-slate-600 dark:text-slate-300 italic mb-6 leading-relaxed">
+"20/10 enseñan muy bien. Jesús es muy profesional y muy agradable. Todo aprobado a la primera."
+</p>
+
+<div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-11 rounded-full bg-primary/10 ring-2 ring-primary/20 flex items-center justify-center">
+<span class="text-primary font-bold text-sm">A</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Adam Ftouh</h4>
+<span class="text-xs text-slate-400">Reseña de Google</span>
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+<!-- Sobre nosotros -->
+<section class="max-w-5xl mx-auto py-16 px-6 text-center">
+<h2 class="text-3xl font-bold mb-6">Autoescuela en Marbella</h2>
+
+<p class="text-slate-600 mb-4">
+Ofrecemos clases para sacar el carnet de conducir en Marbella con coches modernos y profesores con experiencia. Nuestro objetivo es ayudarte a aprobar el examen práctico del permiso B con seguridad y confianza.
+</p>
+
+<p class="text-slate-600">
+Disponemos de clases para permiso B manual y permiso B automático. Nos adaptamos a tus horarios y nivel de experiencia para que consigas tu carnet de conducir lo antes posible.
+</p>
+</section>
+
+<!-- Preguntas frecuentes -->
+<section class="max-w-5xl mx-auto py-20 px-6">
+
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">
+Preguntas frecuentes
+</h2>
+<p class="text-slate-600">
+Resolvemos algunas dudas habituales sobre las clases de conducir en Marbella.
+</p>
+</div>
+
+<div class="space-y-6">
+
+<div class="bg-white p-6 rounded-xl shadow-sm">
+<h3 class="font-semibold mb-2">
+¿Cómo obtengo el teórico?
+</h3>
+<p class="text-slate-600 text-sm">
+Tenemos una plataforma web en la que podrás estudiar todo el temario, consultar dudas con el profesor y realizar los mejores tests del mercado (muy parecido al examen que te tocará).
+</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow-sm">
+<h3 class="font-semibold mb-2">
+¿Cómo me matriculo con vosotros?
+</h3>
+<p class="text-slate-600 text-sm">
+Contáctanos por WhatsApp y te explicamos todo.
+</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow-sm">
+<h3 class="font-semibold mb-2">
+¿Puedo matricularme con vosotros si ya tengo el teórico o vengo de otra escuela?
+</h3>
+<p class="text-slate-600 text-sm">
+Sí, por supuesto. Realizar la matrícula con el teórico aprobado o hacer el traspaso desde otra autoescuela es muy sencillo. Simplemente contáctanos y te explicamos todo.
+</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow-sm">
+<h3 class="font-semibold mb-2">
+¿Dónde comienzan las clases prácticas y cómo puedo reservar una cita?
+</h3>
+<p class="text-slate-600 text-sm">
+Las clases prácticas pueden comenzar en diferentes zonas de Marbella según disponibilidad. Contáctanos y organizamos la mejor opción para ti.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer CTA -->
+<div class="w-full px-6 md:px-12 lg:px-40 py-28 bg-gradient-to-br from-secondary via-slate-800 to-primary relative overflow-hidden">
+<div class="absolute inset-0 animate-gradient bg-gradient-to-br from-secondary via-primary/80 to-secondary opacity-50"></div>
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+<div class="max-w-4xl mx-auto flex flex-col items-center text-center relative z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/80 text-xs font-bold uppercase tracking-wider mb-6">
+<span class="material-symbols-outlined text-sm">bolt</span>
+Plazas Limitadas
+</div>
+<h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight">
+¿Listo para conducir?
+</h2>
+<p class="text-blue-100/80 text-lg md:text-xl mb-12 max-w-2xl leading-relaxed">
+Únete a la autoescuela líder en Marbella y obtén tu carnet con la formación más exclusiva.
+</p>
+<div class="flex flex-col sm:flex-row gap-6 items-center w-full justify-center">
+<a href="tel:+34693573074" class="bg-white text-primary hover:bg-blue-50 px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-black/20 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto min-w-[200px] text-center">
+Empezar ahora
+</a>
+<div class="flex flex-col items-center sm:items-start text-white">
+<span class="text-sm font-medium text-blue-200/70 uppercase tracking-wide">Llámanos</span>
+<a class="text-2xl md:text-3xl font-bold hover:text-blue-100 transition-colors" href="tel:+34693573074">693 57 30 74</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-secondary text-slate-400 py-12 px-6 border-t border-slate-800">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-3">
+
+<span class="font-bold text-white">Autoescuela Marbella</span>
+</div>
+<div class="text-sm text-center md:text-right">
+© 2026 Autoescuela Marbella. Todos los derechos reservados.
+<br/>
+<span class="text-xs text-slate-600">Diseñado en Marbella.</span>
+</div>
+</div>
+<p class="text-xs text-slate-500">
+Autoescuela en Marbella especializada en permiso B manual y automático.
+</p>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<div class="whatsapp-float">
+<div class="ring"></div>
+<a href="https://wa.me/34693573074?text=Hola,%20quiero%20información%20sobre%20las%20clases%20para%20sacar%20el%20permiso%20B%20en%20Marbella" target="_blank" class="flex items-center justify-center w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 shadow-xl shadow-green-500/30 transition-all duration-300 hover:scale-110 relative z-10">
+<svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.673-6.303-1.834l-.44-.267-2.848.955.955-2.848-.267-.44A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+</div>
+
+</div>
+
+<div class="fixed bottom-0 left-0 right-0 md:hidden bg-white border-t p-3 z-50">
+<a href="tel:+34693573074" class="block text-center bg-primary text-white py-3 rounded-xl font-bold">
+Llamar ahora 693 57 30 74
+</a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileIcon = mobileBtn.querySelector('span');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    
+    mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileIcon.textContent = 'menu';
+        } else {
+            mobileIcon.textContent = 'close';
+        }
+    });
+
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileIcon.textContent = 'menu';
+        });
+    });
+});
+</script>
+</body></html>
